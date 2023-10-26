@@ -1,7 +1,7 @@
 function calculateAreaOfTriangle (length,width) {
     
-    const areaOfTraingle = length * width;
-    return areaOfTraingle;
+    const areaOfTriangle = length * width;
+    return areaOfTriangle;
 }
 
 console.log(calculateAreaOfTriangle(7, 10));

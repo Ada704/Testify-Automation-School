@@ -36,13 +36,6 @@ const books =  [
   }
   
 ];
-
-// for(let book = 0; book < books.length; book = book+1) {
-//     if(books[book].reading === true) {
-//         console.log(books[book])
-// }
-// };
-
 for(let book = 0; book < books.length; book++) {
     if(books[book].reading === true) {
         console.log(books[book])

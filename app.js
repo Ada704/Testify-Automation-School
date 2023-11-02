@@ -235,3 +235,39 @@ function performance(position) {
 }
     
 console.log(performance(1 + 'st'))
+
+
+// const books = {
+//     title: "Half of a yellow Sun", 
+//     Description: "Historical Fiction", 
+//     numberOfPages: 256, 
+//     author: "Eze Chioma", 
+//     Reading: true
+// }
+
+// console.log(books.Description) dot notation
+// console.log(books["Description"]) bracket notation
+
+// const books = {
+//     title: "Half of a yellow Sun", 
+//     description: "Historical Fiction", 
+//     numberOfPages: 256, 
+//     author: ["Eze Chioma"], 
+//     reading: true,
+//     addAuthor: function(name){
+//         books.author.push(name)
+//     }
+//     }
+//     toggleReadingStatus: function(){
+//         if(books.reading === false){
+//             books.reading = true
+//         } else {
+//             books.reading = false
+//         }
+//     }
+
+// }
+// books.toggleReadingStatus()
+// books.addAuthor("Maryblossom")
+//books.color = "yellow"
+// console.log(books)

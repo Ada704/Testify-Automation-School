@@ -1,17 +1,11 @@
-// const names = ['obi', 'ada', 'sera', 'tola', 'Ben', 'Jide', 'solomon']
-//  const newNames = names.concat().reverse();
-//      console.log(names)
-//      console.log(newNames)
+// const bankNames = ['Uba', 'Access', 'Gtbank', 'Eco', 'Firstbank', 'Zenith' ];
+// bankNames.reverse()
 
-// const names = ['obi', 'ada', 'sera', 'tola', 'Ben', 'Jide', 'solomon'];
+// console.log(bankNames)
 
-//      Array.prototype.reverse.call(names);
-//      console.log(names);
-
-function reverseArray(arr){
-    return arr.reverse();
+function reverse(bankNames){
+    return bankNames.reverse();
 }
-const originalArray = [1, 2, 3, 4, 5];
-const reversedArray = reversedArray(originalArray);
-console.log(reversedArray);
-
+const originalArray = ['Uba', 'Access', 'Gtbank', 'Eco', 'Firstbank', 'Zenith' ];
+// const reversed = reverse(originalArray)
+console.log(reverse)

@@ -228,13 +228,13 @@
 
 // };
 
-function performance(position) {
-   const sum = position
-    //console.log('Obinna is '+position);
-    return position;
-}
+// function performance(position) {
+//    const sum = position
+//     //console.log('Obinna is '+position);
+//     return position;
+// }
     
-console.log(performance(1 + 'st'))
+// console.log(performance(1 + 'st'))
 
 
 // const books = {

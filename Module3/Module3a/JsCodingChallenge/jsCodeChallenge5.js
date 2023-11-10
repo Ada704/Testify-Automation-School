@@ -1,5 +1,5 @@
-function reverseBanks(bankName){
-    return bankName.slice().reverse();
+function reverseBanks(bankNames){
+    return bankNames.slice().reverse();
 }
 const originalBanks = ['Uba', 'Access', 'Eco', 'Zenith', 'FirstBank'];
  const reversedBanks= reverseBanks(originalBanks);

@@ -89,20 +89,20 @@
 //         console.log('got to work') 
 // };
 
-//const salary = 700000;
+// const salary = 500000;
 // switch(salary){
 //     case 800000:
 //         console.log('Welcome to the next level')
 //         break
 //     case 500000:
-//         ('We can\'t afford you')
+//         console.log(`We can't afford you`)
 //         break
 //     case 1000000:
 //         console.log('You\'re not eligible for this position')
 //     default:
 //         console.log('lol')
 
-// }
+// };
 
 /* FOR/WHILE LOOPS */
 
@@ -271,3 +271,208 @@
 // books.addAuthor("Maryblossom")
 //books.color = "yellow"
 // console.log(books)
+
+//const name = 'chioma'
+// const age = 100
+// const concate = name + age
+// //console.log("it's "+ name +". " +"I am " + age + " years old.")
+// console.log(`Hello, it's me ${name}. I am ${age} years old`)
+// console.log(typeof (age))
+
+// const name = 'raph'
+// switch (name){
+//     case 'chioma':
+//         console.log('sorry, no appointment today')
+//         break;
+//         case 'jesse':
+//             console.log('come back next week')
+//             break;
+//             case 'raph':
+//                 console.log(`you're not registered`)
+//                 break;
+//                 default:
+//                     console.log('click on the link in your email to join the meeting')
+// };
+
+// const value = 2;
+
+// switch (typeof value){
+//     case 1:
+//     case 2:
+//         value = 'number'
+//         // console.log(`number`)
+//         break;
+//     case 3:
+//         value = 'double'
+//         // console.log(`number`)
+//         break;
+//     case 4:
+//         value = 'string'
+//         // console.log(`string`)
+//         break;
+//     case 5:
+//         value = 'boolean'
+//         // console.log(`boolean`)
+//         break;
+//     default:
+//         // console.log(`other`)
+// };
+// console.log(`Datatype is ${value}`)
+
+// const shoeSize = 46
+
+// if(shoeSize >=45){
+//     console.log(`${shoeSize} is available`)
+// } else if(){
+//     console.log(`preorder is available`)
+// }else{
+
+// }
+
+// let time1 = 20;
+
+// if(time1 >= 6 && time1 < 12 ){
+//     console.log(`Good morning`);
+// }
+//  else if( time1 >= 12 && time1 <= 18){
+//     console.log(`Good afternoon`)
+// } 
+// else {
+//     console.log(`Good evening`)
+// }
+
+// const value = 8.9;
+
+// switch (typeof value){
+//     case 'number':
+//     case 'double':
+//      console.log('number')
+//         break;
+//     case 'boolean':
+//      console.log('boolean')
+//         break;
+//     case 'string':
+//      console.log('string')
+//         break;
+//     default:
+//      console.log('other')
+// };
+
+// Ternary Operator
+
+// let age =  7;
+
+// (age >= 10) ? console.log('Come back home'): console.log('You are beautiful');
+
+//  let age = 17;
+
+//  let output = (age >= 10) ? 'Come back home': 'You are beautiful';
+//  console.log(output);
+
+// let number = 0;
+// let number1 = 0
+
+// while(number <= 20 && number1 <= 20){
+// if((number === 0 || number === 1) && (number1 === 0 || number1 === 1)) {
+//      console.log(`${number} book`)
+//      console.log(`${number1} book`)
+// } 
+// else{
+//      console.log(`${number} books`)
+//      console.log(`${number1} books`)
+// } //you can put an if else statement in a while/for loop
+//     number += 1
+//     number1++
+// };
+
+
+// const names = ['ada', 'obi', 'caro', 'sera', 'edwin',];
+
+// for(name of names) {
+// console.log(`My name is ${name}`);
+// }
+
+
+// const names = ['ada', 'obi', 'caro', 'sera', 'edwin',];
+
+// for(name of names) {
+//     console.log(`My name is ${name}`);
+//     if(name === 'obi'){
+//         console.log('Obi is here')
+//         break;
+//     }
+// }
+
+// let names = ['ada', 'obi', 'caro', 'sera', 'edwin'];
+
+// for(let i = 2; i < names.length; i++){
+//     console.log(names[i])
+// }
+
+
+// let letters = ['A', 'B', 'C', 'D']
+// let numerals = ['i', 'ii', 'iii']
+
+//  for(let i = 0; i < letters.length; i++){
+//     console.log(letters[i] );
+
+//     for(let j = 0; j < numerals.length; j++){
+//         console.log(numerals[j] + '. Choose options A-D')
+        
+//     }
+//     console.log()
+// };
+
+// let people = ['ada', 'obi', 'caro', 'sera', 'edwin']
+// let i = 0
+
+// do{
+//     console.log(people[i])
+//     i++
+// }
+// while(i < people.length);
+
+// let i = 7
+
+// do{
+//     console.log(i)
+//     i++
+// }
+// while(i <= 3);
+
+// function login(username){
+//     console.log(`${username} successful`)
+    
+// }
+// login(+2349098878988);
+
+// function employee(salary)   higher-order function
+//     salary()
+// }
+// employee(function(){
+// console.log('awesome')
+// })
+
+// function employee(salary) {
+//     salary()
+// }
+// function email(){
+// console.log('awesome')
+// }
+// employee(email)
+
+// function calc(a, b=0){
+
+//     return (2 * (a + b));
+// }
+// console.log(calc(6));
+
+// function calc(a, ...b){     //rest parameter can only be the last param
+//     console.log(a)
+//     console.log(b)
+// }
+// calc(5,6,7,8,9)
+
+(function() {
+    console.log('IIFE')
+}) ()

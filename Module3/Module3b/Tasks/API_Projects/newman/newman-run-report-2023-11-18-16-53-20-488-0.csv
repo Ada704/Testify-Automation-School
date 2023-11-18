@@ -1,0 +1,10 @@
+iteration,collectionName,requestName,method,url,status,code,responseTime,responseSize,executed,failed,skipped,totalAssertions,executedCount,failedCount,skippedCount
+"1","API Collection","Get Status","GET","https://simple-books-api.glitch.me/","OK","200","4739","46","ALL GET Request must return with 200 OK",,,"1","1","0","0"
+"1","API Collection","Register an API Client","POST","https://simple-books-api.glitch.me/api-clients/","Conflict","409","1305","65",,"ALL POST Request must return with 201 Created",,"1","0","1","0"
+"1","API Collection","Get Books","GET","https://simple-books-api.glitch.me/books","OK","200","286","417"," verify that the id number of Untammed is 5 ",,,"1","1","0","0"
+"1","API Collection","Get a single book","GET","https://simple-books-api.glitch.me/books/5","OK","200","1646","120","Body contains the book, Untamed",,,"1","1","0","0"
+"1","API Collection","Place a book order","POST","https://simple-books-api.glitch.me/orders","Unprocessable Entity","422","619","20",,"Verify that created returns true",,"1","0","1","0"
+"1","API Collection","Get all orders","GET","https://simple-books-api.glitch.me/orders","OK","200","1862","547","Content-Type is present",,,"1","1","0","0"
+"1","API Collection","Get an order","GET","https://simple-books-api.glitch.me/orders/o46vrCpYlbi9sYig0Wcu5","Not Found","404","1151","51",,"Verify that customer name and value exists",,"1","0","1","0"
+"1","API Collection","Update an order","PATCH","https://simple-books-api.glitch.me/orders/o46vrCpYlbi9sYig0Wcu5/","Not Found","404","2120","51",,"verify that body contains name",,"1","0","1","0"
+"1","API Collection","Delete an order","DELETE","https://simple-books-api.glitch.me/orders/o46vrCpYlbi9sYig0Wcu5","Not Found","404","976","51",,"ALL Deleted Request must return with 204 No Content",,"1","0","1","0"

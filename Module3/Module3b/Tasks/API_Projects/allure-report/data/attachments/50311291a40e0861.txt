@@ -1,0 +1,1 @@
+{"id":5,"name":"Untamed","author":"Glennon Doyle","type":"non-fiction","price":15.5,"current-stock":20,"available":true}

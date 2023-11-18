@@ -1,0 +1,6 @@
+
+
+pm.test("ALL Deleted Request must return with 204 No Content", 
+function () {
+    pm.response.to.have.status(204);
+});

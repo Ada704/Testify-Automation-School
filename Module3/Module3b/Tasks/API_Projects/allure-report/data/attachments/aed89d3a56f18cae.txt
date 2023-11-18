@@ -1,0 +1,5 @@
+pm.test(" verify that the id number of Untammed is 5 ", function () {
+    var jsonData = pm.response.json();
+    pm.expect(jsonData[4].id).to.eql(5);
+});
+

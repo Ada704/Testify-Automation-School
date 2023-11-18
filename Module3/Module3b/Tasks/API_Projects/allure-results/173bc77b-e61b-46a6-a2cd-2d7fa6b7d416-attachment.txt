@@ -1,0 +1,3 @@
+pm.test("Body contains the book, Untamed", function () {
+    pm.expect(pm.response.text()).to.include("Untamed");
+});

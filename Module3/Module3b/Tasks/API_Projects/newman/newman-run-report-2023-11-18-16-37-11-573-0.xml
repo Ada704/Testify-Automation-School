@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="API Collection" tests="9" time="7.240">
+  <testsuite name="Get Status" id="fb4be309-726f-40ef-b7f2-4743343d7c61" timestamp="2023-11-18T16:37:04.115Z" tests="1" failures="0" errors="0" time="3.128">
+    <testcase name="ALL GET Request must return with 200 OK" time="3.128" classname="ApiCollection"/>
+  </testsuite>
+  <testsuite name="Register an API Client" id="f1dc8993-f8a7-4c8e-ab77-2f18e4346049" timestamp="2023-11-18T16:37:04.115Z" tests="1" failures="1" errors="0" time="1.084">
+    <testcase name="ALL POST Request must return with 201 Created" time="1.084" classname="ApiCollection">
+      <failure type="AssertionFailure" message="expected response to have status code 201 but got 409">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 49b74cde-c593-4d3c-9196-ba804b634a65.]]>
+        <![CDATA[Collection name: API Collection.]]>
+        <![CDATA[Request name: Register an API Client.]]>
+        <![CDATA[Test description: ALL POST Request must return with 201 Created.]]>
+        <![CDATA[Error message: expected response to have status code 201 but got 409.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 201 but got 409
+   at Object.eval sandbox-script.js:1:2).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Get Books" id="a63954d8-ed17-40ca-9154-7693f1c0bf1f" timestamp="2023-11-18T16:37:04.115Z" tests="1" failures="0" errors="0" time="1.440">
+    <testcase name=" verify that the id number of Untammed is 5 " time="1.440" classname="ApiCollection"/>
+  </testsuite>
+  <testsuite name="Get a single book" id="53064682-dd4a-4dc0-a44a-6bd004ecf6ac" timestamp="2023-11-18T16:37:04.115Z" tests="1" failures="0" errors="0" time="0.241">
+    <testcase name="Body contains the book, Untamed" time="0.241" classname="ApiCollection"/>
+  </testsuite>
+  <testsuite name="Place a book order" id="19ee12e7-9768-485b-ae5a-f5e63acd58be" timestamp="2023-11-18T16:37:04.115Z" tests="1" failures="1" errors="0" time="0.249">
+    <testcase name="Verify that created returns true" time="0.249" classname="ApiCollection">
+      <failure type="AssertionFailure" message="Unexpected token 'U' at 1:1&#xA;Unprocessable Entity&#xA;^">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 49b74cde-c593-4d3c-9196-ba804b634a65.]]>
+        <![CDATA[Collection name: API Collection.]]>
+        <![CDATA[Request name: Place a book order.]]>
+        <![CDATA[Test description: Verify that created returns true.]]>
+        <![CDATA[Error message: Unexpected token 'U' at 1:1
+Unprocessable Entity
+^.]]>
+        <![CDATA[Stacktrace: JSONError: Unexpected token 'U' at 1:1
+Unprocessable Entity
+^
+   at Object.eval sandbox-script.js:1:5).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Get all orders" id="3a4b68c7-14b4-4b9f-b59b-0da454d6f064" timestamp="2023-11-18T16:37:04.115Z" tests="1" failures="0" errors="0" time="0.259">
+    <testcase name="Content-Type is present" time="0.259" classname="ApiCollection"/>
+  </testsuite>
+  <testsuite name="Get an order" id="e1cbb615-0f91-46d1-b7b7-80081b1273b6" timestamp="2023-11-18T16:37:04.115Z" tests="1" failures="1" errors="0" time="0.262">
+    <testcase name="Verify that customer name and value exists" time="0.262" classname="ApiCollection">
+      <failure type="AssertionFailure" message="expected undefined to deeply equal 'sera'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 49b74cde-c593-4d3c-9196-ba804b634a65.]]>
+        <![CDATA[Collection name: API Collection.]]>
+        <![CDATA[Request name: Get an order.]]>
+        <![CDATA[Test description: Verify that customer name and value exists.]]>
+        <![CDATA[Error message: expected undefined to deeply equal 'sera'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected undefined to deeply equal 'sera'
+   at Object.eval sandbox-script.js:1:7).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Update an order" id="ba343e57-898a-44dd-b9c2-8fef8bd00318" timestamp="2023-11-18T16:37:04.115Z" tests="1" failures="1" errors="0" time="0.258">
+    <testcase name="verify that body contains name" time="0.258" classname="ApiCollection">
+      <failure type="AssertionFailure" message="sera is not defined">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 49b74cde-c593-4d3c-9196-ba804b634a65.]]>
+        <![CDATA[Collection name: API Collection.]]>
+        <![CDATA[Request name: Update an order.]]>
+        <![CDATA[Test description: verify that body contains name.]]>
+        <![CDATA[Error message: sera is not defined.]]>
+        <![CDATA[Stacktrace: ReferenceError: sera is not defined
+   at Object.eval sandbox-script.js:1:8).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Delete an order" id="d6517ff9-97ab-49ec-9daa-c77ea02dab55" timestamp="2023-11-18T16:37:04.115Z" tests="1" failures="1" errors="0" time="0.319">
+    <testcase name="ALL Deleted Request must return with 204 No Content" time="0.319" classname="ApiCollection">
+      <failure type="AssertionFailure" message="expected response to have status code 204 but got 404">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 49b74cde-c593-4d3c-9196-ba804b634a65.]]>
+        <![CDATA[Collection name: API Collection.]]>
+        <![CDATA[Request name: Delete an order.]]>
+        <![CDATA[Test description: ALL Deleted Request must return with 204 No Content.]]>
+        <![CDATA[Error message: expected response to have status code 204 but got 404.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 204 but got 404
+   at Object.eval sandbox-script.js:1:9).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+</testsuites>

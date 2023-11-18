@@ -1,0 +1,3 @@
+pm.test("ALL POST Request must return with 201 Created", function () {
+    pm.response.to.have.status(201);
+});

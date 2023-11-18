@@ -1,0 +1,4 @@
+pm.test("Verify that created returns true", function () {
+    var jsonData = pm.response.json();
+    pm.expect(jsonData.created).to.eql(true);
+});

@@ -1,0 +1,4 @@
+pm.test("Verify that customer name and value exists", function () {
+    var jsonData = pm.response.json();
+    pm.expect(jsonData.customerName).to.eql("sera");
+});

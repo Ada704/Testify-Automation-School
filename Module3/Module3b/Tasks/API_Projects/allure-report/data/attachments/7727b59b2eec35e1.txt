@@ -1,0 +1,4 @@
+pm.test("verify that body contains name", function () {
+    var jsonData = pm.response.json();
+    pm.expect(jsonData.name).to.eql(sera);
+});

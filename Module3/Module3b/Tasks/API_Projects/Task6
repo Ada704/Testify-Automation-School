@@ -1,0 +1,89 @@
+newman run "https://api.postman.com/collections/19904197-49b74cde-c593-4d3c-9196-ba804b634a65?access_key=PMAT-01HFECP745ENB8PEAF9FYDBMNH"
+newman
+
+API Collection
+
+→ Get Status
+  GET https://simple-books-api.glitch.me/ [200 OK, 258B, 3.3s]
+  ✓  ALL GET Request must return with 200 OK
+
+→ Register an API Client
+  POST https://simple-books-api.glitch.me/api-clients/ [409 Conflict, 283B, 1089ms]
+  1. ALL POST Request must return with 201 Created
+
+→ Get Books
+  GET https://simple-books-api.glitch.me/books [200 OK, 631B, 1104ms]
+  ✓   verify that the id number of Untammed is 5 
+
+→ Get a single book
+  GET https://simple-books-api.glitch.me/books/5 [200 OK, 333B, 1837ms]
+  ✓  Body contains the book, Untamed
+
+→ Place a book order
+  POST https://simple-books-api.glitch.me/orders [422 Unprocessable Entity, 339B, 1775ms]
+  2. Verify that created returns true
+
+→ Get all orders
+  GET https://simple-books-api.glitch.me/orders [200 OK, 761B, 777ms]
+  ✓  Content-Type is present
+
+→ Get an order
+  GET https://simple-books-api.glitch.me/orders/o46vrCpYlbi9sYig0Wcu5 [404 Not Found, 270B, 540ms]
+  3. Verify that customer name and value exists
+
+→ Update an order
+  PATCH https://simple-books-api.glitch.me/orders/o46vrCpYlbi9sYig0Wcu5/ [404 Not Found, 270B, 1517ms]
+  4. verify that body contains name
+
+→ Delete an order
+  DELETE https://simple-books-api.glitch.me/orders/o46vrCpYlbi9sYig0Wcu5 [404 Not Found, 270B, 385ms]
+  5. ALL Deleted Request must return with 204 No Content
+
+┌─────────────────────────┬─────────────────────┬────────────────────┐
+│                         │            executed │             failed │
+├─────────────────────────┼─────────────────────┼────────────────────┤
+│              iterations │                   1 │                  0 │
+├─────────────────────────┼─────────────────────┼────────────────────┤
+│                requests │                   9 │                  0 │
+├─────────────────────────┼─────────────────────┼────────────────────┤
+│            test-scripts │                   9 │                  0 │
+├─────────────────────────┼─────────────────────┼────────────────────┤
+│      prerequest-scripts │                   0 │                  0 │
+├─────────────────────────┼─────────────────────┼────────────────────┤
+│              assertions │                   9 │                  5 │
+├─────────────────────────┴─────────────────────┴────────────────────┤
+│ total run duration: 12.5s                                          │
+├────────────────────────────────────────────────────────────────────┤
+│ total data received: 1.37kB (approx)                               │
+├────────────────────────────────────────────────────────────────────┤
+│ average response time: 1371ms [min: 385ms, max: 3.3s, s.d.: 841ms] │
+└────────────────────────────────────────────────────────────────────┘
+
+  #  failure        detail                                                 
+                                                                           
+ 1.  AssertionErr…  ALL POST Request must return with 201 Created          
+                    expected response to have status code 201 but got 409  
+                    at assertion:0 in test-script                          
+                    inside "Register an API Client"                        
+                                                                           
+ 2.  JSONError      Verify that created returns true                       
+                    Unexpected token 'U' at 1:1                            
+                    Unprocessable Entity                                   
+                    ^                                                      
+                    at assertion:0 in test-script                          
+                    inside "Place a book order"                            
+                                                                           
+ 3.  AssertionErr…  Verify that customer name and value exists             
+                    expected undefined to deeply equal 'sera'              
+                    at assertion:0 in test-script                          
+                    inside "Get an order"                                  
+                                                                           
+ 4.  ReferenceErr…  verify that body contains name                         
+                    sera is not defined                                    
+                    at assertion:0 in test-script                          
+                    inside "Update an order"                               
+                                                                           
+ 5.  AssertionErr…  ALL Deleted Request must return with 204 No Content    
+                    expected response to have status code 204 but got 404  
+                    at assertion:0 in test-script                          
+                    inside "Delete an order"       

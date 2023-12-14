@@ -1,0 +1,613 @@
+Sendinblue
+
+❏ Sales CRM / Companies
+↳ Get all Companies
+  GET https://api.sendinblue.com/v3/companies [500 Internal Server Error, 1.34kB, 1590ms]
+
+↳ Create a company
+  POST https://api.sendinblue.com/v3/companies [400 Bad Request, 903B, 435ms]
+
+↳ Get company attributes
+  GET https://api.sendinblue.com/v3/companies/attributes [200 OK, 2.59kB, 817ms]
+
+↳ Link and Unlink company with contact and deal
+  PATCH https://api.sendinblue.com/v3/companies/link-unlink/65647a22ab1b1e06aef6d555 [400 Bad Request, 882B, 378ms]
+
+↳ Get a company
+  GET https://api.sendinblue.com/v3/companies/veniam elit in [400 Bad Request, 904B, 585ms]
+
+↳ Delete a company
+  DELETE https://api.sendinblue.com/v3/companies/veniam elit in [400 Bad Request, 841B, 594ms]
+
+↳ Update a company
+  PATCH https://api.sendinblue.com/v3/companies/veniam elit in [400 Bad Request, 857B, 592ms]
+
+↳ Get pipeline stages
+  GET https://api.sendinblue.com/v3/crm/pipeline/details [200 OK, 1.42kB, 584ms]
+
+↳ https://crm-backend-api.brevo.com/crm/backend/companies?limit=50&page=1
+  GET https://crm-backend-api.brevo.com/crm/backend/companies?limit=50&page=1 [200 OK, 4.27kB, 2.3s]
+
+↳ https://crm-backend-api.brevo.com/crm/backend/company
+  POST https://crm-backend-api.brevo.com/crm/backend/company [200 OK, 1.36kB, 572ms]
+
+❏ Sales CRM / Deals
+↳ Get all deals
+  GET https://api.sendinblue.com/v3/crm/deals?filter[attributes]=veniam elit in&filter[linkedCompaniesIds]=veniam elit in&filter[linkedContactsIds]=veniam elit in&offset=13396752&limit=13396752&sort=desc [200 OK, 1.52kB, 663ms]
+
+↳ Create a deal
+  POST https://api.sendinblue.com/v3/crm/deals [400 Bad Request, 867B, 1101ms]
+
+↳ Link and Unlink a deal with contacts and companies
+  PATCH https://api.sendinblue.com/v3/crm/deals/link-unlink/veniam elit in [400 Bad Request, 846B, 403ms]
+
+↳ Get deal attributes
+  GET https://api.sendinblue.com/v3/crm/attributes/deals [200 OK, 5.44kB, 1386ms]
+
+↳ Get a deal
+  GET https://api.sendinblue.com/v3/crm/deals/veniam elit in [400 Bad Request, 950B, 396ms]
+
+↳ Delete a deal
+  DELETE https://api.sendinblue.com/v3/crm/deals/veniam elit in [400 Bad Request, 847B, 365ms]
+
+↳ Update a deal
+  PATCH https://api.sendinblue.com/v3/crm/deals/veniam elit in [400 Bad Request, 847B, 364ms]
+
+❏ Sales CRM / Tasks
+↳ Get all tasks
+  GET https://api.sendinblue.com/v3/crm/tasks?filter[type]=veniam elit in&filter[status]=done&filter[date]=range&filter[assignTo]=veniam elit in&filter[contacts]=veniam elit in&filter[deals]=veniam elit in&filter[companies]=veniam elit in&dateFrom=-41398727&dateTo=-41398727&offset=13396752&limit=50&sort=desc&sortBy=name [400 Bad Request, 858B, 1006ms]
+
+↳ Create a task
+  POST https://api.sendinblue.com/v3/crm/tasks [400 Bad Request, 912B, 856ms]
+
+↳ Get all task types
+  GET https://api.sendinblue.com/v3/crm/tasktypes [200 OK, 1.3kB, 925ms]
+
+↳ Get a task
+  GET https://api.sendinblue.com/v3/crm/tasks/veniam elit in [400 Bad Request, 860B, 817ms]
+
+↳ Delete a task
+  DELETE https://api.sendinblue.com/v3/crm/tasks/veniam elit in [400 Bad Request, 805B, 988ms]
+
+↳ Update a task
+  PATCH https://api.sendinblue.com/v3/crm/tasks/veniam elit in [400 Bad Request, 805B, 962ms]
+
+❏ Sales CRM / Notes
+↳ Get all notes
+  GET https://api.sendinblue.com/v3/crm/notes?entity=deals&entityIds=veniam elit in&dateFrom=-41398727&dateTo=-41398727&offset=13396752&limit=50&sort=desc [400 Bad Request, 929B, 351ms]
+
+↳ Create a note
+  POST https://api.sendinblue.com/v3/crm/notes [400 Bad Request, 891B, 614ms]
+
+↳ Get a note
+  GET https://api.sendinblue.com/v3/crm/notes/veniam elit in [400 Bad Request, 952B, 598ms]
+
+↳ Update a note
+  PATCH https://api.sendinblue.com/v3/crm/notes/veniam elit in [400 Bad Request, 902B, 330ms]
+
+↳ Delete a note
+  DELETE https://api.sendinblue.com/v3/crm/notes/veniam elit in [400 Bad Request, 847B, 402ms]
+
+❏ Sales CRM / Files
+↳ Get all files
+  GET https://api.sendinblue.com/v3/crm/files?entity=deals&entityIds=veniam elit in&dateFrom=-41398727&dateTo=-41398727&offset=13396752&limit=50&sort=desc [400 Bad Request, 941B, 416ms]
+
+↳ Upload a file
+  ┌
+  │ 'Form param `file`, file load error: missing file source'
+  └
+  POST https://api.sendinblue.com/v3/crm/files [400 Bad Request, 832B, 337ms]
+
+↳ Download a file
+  GET https://api.sendinblue.com/v3/crm/files/veniam elit in [400 Bad Request, 930B, 406ms]
+
+↳ Delete a file
+  DELETE https://api.sendinblue.com/v3/crm/files/veniam elit in [400 Bad Request, 1.01kB, 407ms]
+
+↳ Get file details
+  GET https://api.sendinblue.com/v3/crm/files/veniam elit in/data [400 Bad Request, 1kB, 355ms]
+
+❏ Marketing / Email Campaigns
+↳ Get an email campaign report
+  GET https://api.sendinblue.com/v3/emailCampaigns/13396752 [404 Not Found, 1kB, 323ms]
+
+↳ Update an email campaign
+  PUT https://api.sendinblue.com/v3/emailCampaigns/13396752 [400 Bad Request, 997B, 305ms]
+
+↳ Delete an email campaign
+  DELETE https://api.sendinblue.com/v3/emailCampaigns/13396752 [404 Not Found, 973B, 341ms]
+
+↳ Send an email campaign immediately, based on campaignId
+  POST https://api.sendinblue.com/v3/emailCampaigns/13396752/sendNow [404 Not Found, 973B, 323ms]
+
+↳ Send an email campaign to your test list
+  POST https://api.sendinblue.com/v3/emailCampaigns/13396752/sendTest [404 Not Found, 987B, 360ms]
+
+↳ Update an email campaign status
+  PUT https://api.sendinblue.com/v3/emailCampaigns/13396752/status [404 Not Found, 972B, 336ms]
+
+↳ Send the report of a campaign
+  POST https://api.sendinblue.com/v3/emailCampaigns/13396752/sendReport [404 Not Found, 978B, 347ms]
+
+↳ Get an A/B test email campaign results
+  GET https://api.sendinblue.com/v3/emailCampaigns/13396752/abTestCampaignResult [404 Not Found, 998B, 444ms]
+
+↳ Get a shared template url
+  GET https://api.sendinblue.com/v3/emailCampaigns/13396752/sharedUrl [404 Not Found, 998B, 665ms]
+
+↳ Export the recipients of an email campaign
+  POST https://api.sendinblue.com/v3/emailCampaigns/13396752/exportRecipients [404 Not Found, 978B, 348ms]
+
+↳ Return all your created email campaigns
+  GET https://api.sendinblue.com/v3/emailCampaigns?type=classic&status=archive&startDate=veniam elit in&endDate=veniam elit in&limit=50&offset=0&sort=desc [400 Bad Request, 991B, 332ms]
+
+↳ Create an email campaign
+  POST https://api.sendinblue.com/v3/emailCampaigns [400 Bad Request, 997B, 329ms]
+
+↳ Upload an image to your account's image gallery
+  POST https://api.sendinblue.com/v3/emailCampaigns/images [400 Bad Request, 977B, 532ms]
+
+❏ Marketing / SMS Campaigns
+↳ Returns the information for all your created SMS campaigns
+  GET https://api.sendinblue.com/v3/smsCampaigns?status=archive&startDate=veniam elit in&endDate=veniam elit in&limit=500&offset=0&sort=desc [400 Bad Request, 992B, 367ms]
+
+↳ Creates an SMS campaign
+  POST https://api.sendinblue.com/v3/smsCampaigns [400 Bad Request, 992B, 450ms]
+
+↳ Get an SMS campaign
+  GET https://api.sendinblue.com/v3/smsCampaigns/13396752 [404 Not Found, 1kB, 347ms]
+
+↳ Update an SMS campaign
+  PUT https://api.sendinblue.com/v3/smsCampaigns/13396752 [404 Not Found, 973B, 409ms]
+
+↳ Delete an SMS campaign
+  DELETE https://api.sendinblue.com/v3/smsCampaigns/13396752 [404 Not Found, 972B, 377ms]
+
+↳ Send your SMS campaign immediately
+  POST https://api.sendinblue.com/v3/smsCampaigns/13396752/sendNow [404 Not Found, 973B, 376ms]
+
+↳ Update a campaign's status
+  PUT https://api.sendinblue.com/v3/smsCampaigns/13396752/status [404 Not Found, 973B, 363ms]
+
+↳ Send a test SMS campaign
+  POST https://api.sendinblue.com/v3/smsCampaigns/13396752/sendTest [404 Not Found, 973B, 333ms]
+
+↳ Export an SMS campaign's recipients
+  POST https://api.sendinblue.com/v3/smsCampaigns/13396752/exportRecipients [404 Not Found, 978B, 355ms]
+
+↳ Send an SMS campaign's report
+  POST https://api.sendinblue.com/v3/smsCampaigns/13396752/sendReport [404 Not Found, 978B, 524ms]
+
+❏ Conversations / Messages
+↳ Send a message as an agent
+  POST https://api.sendinblue.com/v3/conversations/messages [401 Unauthorized, 642B, 465ms]
+
+↳ Get a message
+  GET https://api.sendinblue.com/v3/conversations/messages/veniam elit in [401 Unauthorized, 690B, 409ms]
+
+↳ Update a message sent by an agent
+  PUT https://api.sendinblue.com/v3/conversations/messages/veniam elit in [401 Unauthorized, 643B, 454ms]
+
+↳ Delete a message sent by an agent
+  DELETE https://api.sendinblue.com/v3/conversations/messages/veniam elit in [401 Unauthorized, 643B, 546ms]
+
+❏ Conversations / Status
+↳ Sets agent’s status to online for 2-3 minutes
+  POST https://api.sendinblue.com/v3/conversations/agentOnlinePing [401 Unauthorized, 642B, 376ms]
+
+❏ Conversations / Pushed messages
+↳ Send an automated message to a visitor
+  POST https://api.sendinblue.com/v3/conversations/pushedMessages [401 Unauthorized, 642B, 389ms]
+
+↳ Get an automated message
+  GET https://api.sendinblue.com/v3/conversations/pushedMessages/veniam elit in [401 Unauthorized, 691B, 408ms]
+
+↳ Update an automated message
+  PUT https://api.sendinblue.com/v3/conversations/pushedMessages/veniam elit in [401 Unauthorized, 642B, 519ms]
+
+↳ Delete an automated message
+  DELETE https://api.sendinblue.com/v3/conversations/pushedMessages/veniam elit in [401 Unauthorized, 643B, 607ms]
+
+❏ Contact management / Contacts
+↳ Get all the contacts
+  GET https://api.sendinblue.com/v3/contacts?limit=50&offset=0&modifiedSince=2022-02-01T00:00:00.000&sort=desc [200 OK, 2.1kB, 400ms]
+
+↳ Create a contact
+  POST https://api.sendinblue.com/v3/contacts [201 Created, 691B, 507ms]
+
+↳ Create Contact via DOI (Double-Opt-In) Flow
+  POST https://api.sendinblue.com/v3/contacts/doubleOptinConfirmation [401 Unauthorized, 637B, 294ms]
+
+↳ Update multiple contacts
+  POST https://api.sendinblue.com/v3/contacts/batch [400 Bad Request, 755B, 368ms]
+
+↳ Export contacts
+  POST https://api.sendinblue.com/v3/contacts/export [202 Accepted, 891B, 599ms]
+
+↳ Import contacts
+  POST https://api.sendinblue.com/v3/contacts/import [400 Bad Request, 961B, 333ms]
+
+↳ Get a contact's details
+  GET https://api.sendinblue.com/v3/contacts/{{email}} [400 Bad Request, 985B, 321ms]
+
+↳ Delete a contact
+  DELETE https://api.sendinblue.com/v3/contacts/{{contact_id}} [400 Bad Request, 952B, 353ms]
+
+↳ Update a contact
+  PUT https://api.sendinblue.com/v3/contacts/veniam elit in [400 Bad Request, 760B, 311ms]
+
+↳ Get email campaigns' statistics for a contact
+  GET https://api.sendinblue.com/v3/contacts/veniam elit in/campaignStats?startDate=veniam elit in&endDate=veniam elit in [400 Bad Request, 965B, 412ms]
+
+❏ Contact management / Folders
+↳ Get all folders
+  GET https://api.sendinblue.com/v3/contacts/folders?limit=10&offset=0&sort=desc [200 OK, 1.55kB, 472ms]
+  1. Folders array is present and contains the expected number of elements
+  ✓  Each folder object has required fields
+  ✓  Name in each folder is a non-empty string
+  ✓  Count accurately represents the number of folders in the response
+
+↳ Create a folder
+  POST https://api.sendinblue.com/v3/contacts/folders [201 Created, 882B, 348ms]
+  ✓  Response is an object with id property
+
+↳ Returns a folder's details
+  GET https://api.sendinblue.com/v3/contacts/folders/19 [200 OK, 1.02kB, 351ms]
+  ✓  Id is a non-negative integer
+  ✓  Name is a non-empty string
+  ✓  Total blacklisted is a non-negative integer
+  ✓  TotalSubscribers and UniqueSubscribers are non-negative integers
+
+↳ Update a folder
+  PUT https://api.sendinblue.com/v3/contacts/folders/19 [204 No Content, 793B, 366ms]
+
+↳ Get lists in a folder
+  GET https://api.sendinblue.com/v3/contacts/folders/19/lists?limit=10&offset=0&sort=desc [200 OK, 895B, 360ms]
+  ✓  Response status code is 200
+
+↳ Delete a folder (and all its lists)
+  DELETE https://api.sendinblue.com/v3/contacts/folders/19 [204 No Content, 794B, 1009ms]
+
+❏ Contact management / Lists
+↳ Get all the lists
+  GET https://api.sendinblue.com/v3/contacts/lists?limit=10&offset=0&sort=desc[200 OK, 1.76kB, 357ms]
+  ✓  Count field matches the number of lists returned
+
+↳ Create a list
+  POST https://api.sendinblue.com/v3/contacts/lists [201 Created, 882B, 492ms]
+  ✓  Response has the required field 'id'
+  ✓  Id is a non-negative integer
+  ✓  Verify that the 'id' is set in the collection variable 'listid'
+  ✓  Response time is less than 2000ms
+
+↳ Get contacts in a list
+  GET https://api.sendinblue.com/v3/contacts/lists/20/contacts?limit=50&offset=0&sort=desc [200 OK, 920B, 396ms]
+  ✓  Response contains the 'contacts' array
+  ✓  Count field is a non-negative integer
+
+↳ Add existing contacts to a list
+  POST https://api.sendinblue.com/v3/contacts/lists/13396752/contacts/add [404 Not Found, 971B, 322ms]
+
+↳ Delete a contact from a list
+  POST https://api.sendinblue.com/v3/contacts/lists/13396752/contacts/remove [404 Not Found, 971B, 324ms]
+
+↳ Get a list's details
+  GET https://api.sendinblue.com/v3/contacts/lists/13396752 [404 Not Found, 996B, 402ms]
+
+↳ Update a list
+  PUT https://api.sendinblue.com/v3/contacts/lists/20 [400 Bad Request, 947B, 336ms]
+
+↳ Delete a list
+  DELETE https://api.sendinblue.com/v3/contacts/lists/20 [204 No Content, 793B, 449ms]
+
+❏ Contact management / Attributes
+↳ List all attributes
+  GET https://api.sendinblue.com/v3/contacts/attributes [200 OK, 1.48kB, 428ms]
+
+↳ Update contact attribute
+  PUT https://api.sendinblue.com/v3/contacts/attributes/global/veniam elit in [400 Bad Request, 1.05kB, 312ms]
+
+↳ Create contact attribute
+  POST https://api.sendinblue.com/v3/contacts/attributes/global/veniam elit in[400 Bad Request, 1.05kB, 303ms]
+
+↳ Delete an attribute
+  DELETE https://api.sendinblue.com/v3/contacts/attributes/global/veniam elit in [404 Not Found, 969B, 519ms]
+
+❏ Transactional / Email API
+↳ Send a transactional email
+  POST https://api.sendinblue.com/v3/smtp/email?= [201 Created, 734B, 284ms]
+  ✓  body contains messageId
+
+↳ Get the list of transactional emails on the basis of allowed filters
+  GET https://api.sendinblue.com/v3/smtp/emails?email=veniam elit in&templateId=13396752&messageId=veniam elit in&startDate=veniam elit in&endDate=veniam elit in&sort=desc&limit=500&offset=0 [400 Bad Request, 877B, 314ms]
+
+↳ Delete scheduled emails by batchId or messageId
+  DELETE https://api.sendinblue.com/v3/smtp/email/4320f270-a4e3-4a2e-b591-edfe30a5e627 [404 Not Found, 904B, 854ms]
+
+↳ Get the personalized content of a sent transactional email
+  GET https://api.sendinblue.com/v3/smtp/emails/veniam elit in [404 Not Found, 921B, 393ms]
+
+↳ Fetch scheduled emails by batchId or messageId
+  GET https://api.sendinblue.com/v3/smtp/emailStatus/4320f270-a4e3-4a2e-b591-edfe30a5e627?startDate=2022-02-02&endDate=2022-03-02&sort=desc&status=queued&limit=100&offset=0 [400 Bad Request, 916B, 317ms]
+
+❏ Transactional / Templates
+↳ Get the list of email templates
+  GET https://api.sendinblue.com/v3/smtp/templates?templateStatus=false&limit=50&offset=0&sort=desc [200 OK, 811B, 343ms]
+
+↳ Create an email template
+  POST https://api.sendinblue.com/v3/smtp/templates [400 Bad Request, 995B, 289ms]
+
+↳ Returns the template information
+  GET https://api.sendinblue.com/v3/smtp/templates/13396752 [404 Not Found, 915B, 330ms]
+
+↳ Update an email template
+  PUT https://api.sendinblue.com/v3/smtp/templates/13396752 [400 Bad Request, 892B, 307ms]
+
+↳ Delete an inactive email template
+  DELETE https://api.sendinblue.com/v3/smtp/templates/13396752 [404 Not Found, 893B, 365ms]
+
+↳ Send a template to your test list
+  POST https://api.sendinblue.com/v3/smtp/templates/13396752/sendTest [404 Not Found, 986B, 324ms]
+
+❏ Transactional / Statistics
+↳ Get your transactional email activity aggregated over a period of time
+  GET https://api.sendinblue.com/v3/smtp/statistics/aggregatedReport [200 OK, 1.05kB, 436ms]
+  ✓  body contains range
+  ✓  body contains requets
+  ✓  body contains delivered
+
+↳ Get your transactional email activity aggregated per day
+  GET https://api.sendinblue.com/v3/smtp/statistics/reports?limit=10&offset=0 [200 OK, 1.24kB, 403ms]
+  ✓  Body matches string
+  ✓  Body matches string
+  ✓  Body matches string
+
+↳ Get all your transactional email activity (unaggregated events)
+  GET https://api.sendinblue.com/v3/smtp/statistics/events?days=11&messageId=202212281024.62341432715@smtp-relay.mailin.fr [401 Unauthorized, 686B, 312ms]
+
+❏ Transactional / Blocked Contacts
+↳ Get the list of blocked or unsubscribed transactional contacts
+  GET https://api.sendinblue.com/v3/smtp/blockedContacts?startDate=veniam elit in&endDate=veniam elit in&limit=50&offset=0&senders=ullamco,dolor elit aute&sort=desc [400 Bad Request, 909B, 303ms]
+
+↳ Unblock or resubscribe a transactional contact
+  DELETE https://api.sendinblue.com/v3/smtp/blockedContacts/veniam elit in [400 Bad Request, 858B, 294ms]
+
+❏ Transactional / Blocked Domains
+↳ Get the list of blocked domains
+  GET https://api.sendinblue.com/v3/smtp/blockedDomains [200 OK, 893B, 424ms]
+
+↳ Add a new domain to the list of blocked domains
+  POST https://api.sendinblue.com/v3/smtp/blockedDomains [400 Bad Request, 979B, 301ms]
+
+↳ Unblock an existing domain from the list of blocked domains
+  DELETE https://api.sendinblue.com/v3/smtp/blockedDomains/veniam elit in [400 Bad Request, 854B, 324ms]
+
+❏ Transactional / Logs
+↳ Delete hardbounces
+  POST https://api.sendinblue.com/v3/smtp/deleteHardbounces [200 OK, 873B, 359ms]
+  ✓  Status code is 200
+
+↳ Delete an SMTP transactional log
+  DELETE https://api.sendinblue.com/v3/smtp/log/<202311291955.95412640722@smtp-relay.mailin.fr> [204 No Content, 710B, 539ms]
+  ✓  Status code is 204
+
+❏ Transactional / Inbound Email Parsing
+↳ Get the list of all the events for the received emails.
+  GET https://api.sendinblue.com/v3/inbound/events?sender=veniam elit in&startDate=1947-08-13&endDate=1947-08-13&limit=100&offset=0&sort=desc [400 Bad Request, 899B, 370ms]
+
+↳ Fetch all events history for one particular received email.
+  GET https://api.sendinblue.com/v3/inbound/events/veniam elit in [400 Bad Request, 875B, 320ms]
+
+↳ Retrieve inbound attachment with download token.
+  GET https://api.sendinblue.com/v3/inbound/attachments/veniam elit in [406 Not Acceptable, 830B, 377ms]
+
+❏ Transactional / Transactional SMS
+↳ Send SMS message to a mobile number
+  POST https://api.sendinblue.com/v3/transactionalSMS/sms [400 Bad Request, 1.06kB, 368ms]
+
+❏ Transactional / SMS statistics
+↳ Get your SMS activity aggregated over a period of time
+  GET https://api.sendinblue.com/v3/transactionalSMS/statistics/aggregatedReport [200 OK, 811B, 341ms]
+  ✓  Status code is 200
+
+↳ Get your SMS activity aggregated per day
+  GET https://api.sendinblue.com/v3/transactionalSMS/statistics/reports [200 OK, 811B, 543ms]
+  ✓  Status code is 200
+
+↳ Get all your SMS activity (unaggregated events)
+  GET https://api.sendinblue.com/v3/transactionalSMS/statistics/events?limit=50&offset=0&event=bounces&sort=desc [200 OK, 811B, 337ms]
+  ✓  Status code is 200
+
+❏ Account / Webhooks
+↳ Get all webhooks
+  GET https://api.sendinblue.com/v3/webhooks?type=marketing&sort=desc [200 OK, 1.78kB, 364ms]
+  ✓  verify that body includes url,id,description,events,type
+
+↳ Create a webhook
+  POST https://api.sendinblue.com/v3/webhooks [201 Created, 803B, 338ms]
+  ✓  verify that body contains id
+
+↳ Get a webhook details
+  GET https://api.sendinblue.com/v3/webhooks/933662 [200 OK, 1.12kB, 346ms]
+  ✓  verify that body includes url,id,description,events,type
+
+↳ Update a webhook
+  PUT https://api.sendinblue.com/v3/webhooks/933662 [204 No Content, 711B, 2.3s]
+  ✓  Status code is 204
+
+↳ Delete a webhook
+  DELETE https://api.sendinblue.com/v3/webhooks/933662 [204 No Content, 709B, 489ms]
+  ✓  Status code is 204
+
+❏ Account / Reseller / Credits
+↳ Add Email and/or SMS credits to a specific child account
+  POST https://api.sendinblue.com/v3/reseller/children/veniam elit in/credits/add [403 Forbidden, 906B, 311ms]
+
+↳ Remove Email and/or SMS credits from a specific child account
+  POST https://api.sendinblue.com/v3/reseller/children/veniam elit in/credits/remove [403 Forbidden, 906B, 338ms]
+
+❏ Account / Reseller / IP management
+↳ Associate a dedicated IP to the child
+  POST https://api.sendinblue.com/v3/reseller/children/veniam elit in/ips/associate [403 Forbidden, 906B, 376ms]
+
+↳ Dissociate a dedicated IP to the child
+  POST https://api.sendinblue.com/v3/reseller/children/veniam elit in/ips/dissociate [403 Forbidden, 906B, 319ms]
+
+❏ Account / Reseller / Domains
+↳ Get all sender domains for a specific child account
+  GET https://api.sendinblue.com/v3/reseller/children/veniam elit in/domains [403 Forbidden, 938B, 591ms]
+
+↳ Create a domain for a child account
+  POST https://api.sendinblue.com/v3/reseller/children/veniam elit in/domains [403 Forbidden, 906B, 318ms]
+
+↳ Update the sender domain of reseller's child based on the childIdentifier and domainName passed
+  PUT https://api.sendinblue.com/v3/reseller/children/veniam elit in/domains/veniam elit in [403 Forbidden, 906B, 308ms]
+
+↳ Delete the sender domain of the reseller child based on the childIdentifier and domainName passed
+  DELETE https://api.sendinblue.com/v3/reseller/children/veniam elit in/domains/veniam elit in [403 Forbidden, 906B, 442ms]
+
+❏ Account / Reseller / Child accounts
+↳ Get a child account's details
+  GET https://api.sendinblue.com/v3/reseller/children/veniam elit in [403 Forbidden, 931B, 325ms]
+
+↳ Update info of reseller's child based on the child identifier supplied
+  PUT https://api.sendinblue.com/v3/reseller/children/veniam elit in [403 Forbidden, 906B, 321ms]
+
+↳ Delete a single reseller child based on the child identifier supplied
+  DELETE https://api.sendinblue.com/v3/reseller/children/veniam elit in [403 Forbidden, 906B, 347ms]
+
+↳ Update info of reseller's child account status based on the identifier supplied
+  PUT https://api.sendinblue.com/v3/reseller/children/veniam elit in/accountStatus [403 Forbidden, 906B, 338ms]
+
+↳ Get the status of a reseller's child account creation, whether it is successfully created (exists) or not based on the childIdentifier supplied
+  GET https://api.sendinblue.com/v3/reseller/children/veniam elit in/accountCreationStatus [403 Forbidden, 931B, 345ms]
+
+↳ Get session token to access Sendinblue (SSO)
+  GET https://api.sendinblue.com/v3/reseller/children/veniam elit in/auth [403 Forbidden, 931B, 335ms]
+
+↳ Get the list of all children accounts
+  GET https://api.sendinblue.com/v3/reseller/children?limit=10&offset=0 [403 Forbidden, 931B, 341ms]
+
+↳ Creates a reseller child
+  POST https://api.sendinblue.com/v3/reseller/children [403 Forbidden, 906B, 324ms]
+
+❏ Account / Process
+↳ Return all the processes for your account
+  GET https://api.sendinblue.com/v3/processes?limit=10&offset=0&sort=desc [200 OK, 1.59kB, 368ms]
+  2. verify that body contains status
+  ┌
+  │ 'completed'
+  └
+  3. verify that body contains name
+  ┌
+  │ 'SEARCH_EXPORT_USERS'
+  └
+
+↳ Return the informations for a process
+  GET https://api.sendinblue.com/v3/processes/8 [200 OK, 1.03kB, 353ms]
+  4. Verify the value of status
+
+❏ Account / Corporate
+↳ Get the details of requested master account
+  GET https://api.sendinblue.com/v3/corporate/masterAccount [403 Forbidden, 744B, 317ms]
+
+↳ Get the list of all the sub-accounts of the master account.
+  GET https://api.sendinblue.com/v3/corporate/subAccount?offset=-41398727&limit=-41398727 [403 Forbidden, 744B, 328ms]
+
+↳ Create a new sub-account under a master account.
+  POST https://api.sendinblue.com/v3/corporate/subAccount [403 Forbidden, 703B, 301ms]
+
+↳ Generate SSO token to access Sendinblue
+  POST https://api.sendinblue.com/v3/corporate/subAccount/ssoToken [403 Forbidden, 704B, 314ms]
+
+↳ Get sub-account details
+  GET https://api.sendinblue.com/v3/corporate/subAccount/13396752 [403 Forbidden, 744B, 352ms]
+
+↳ Delete a sub-account
+  DELETE https://api.sendinblue.com/v3/corporate/subAccount/13396752 [403 Forbidden, 704B, 288ms]
+
+↳ Update sub-account plan
+  PUT https://api.sendinblue.com/v3/corporate/subAccount/13396752/plan [403 Forbidden, 696B, 304ms]
+
+❏ Account / Account data
+↳ Get your account information, plan and credits details
+  GET https://api.sendinblue.com/v3/account [200 OK, 1.96kB, 392ms]
+  ✓  verify that body contains the strings
+  ✓  Your test name
+
+❏ Account / Senders
+↳ Get the list of all your senders
+  GET https://api.sendinblue.com/v3/senders [200 OK, 1.61kB, 446ms]
+  ✓  verify that body contains details of senders
+  ✓  Your test name
+
+↳ Create a new sender
+  POST https://api.sendinblue.com/v3/senders [201 Created, 962B, 1053ms]
+  ✓  verify that spfError returns true
+  ✓  verify that dkimError returns true
+
+↳ Get all the dedicated IPs for your account
+  GET https://api.sendinblue.com/v3/senders/ips [200 OK, 992B, 607ms]
+  ✓  Status code is 200
+  ✓  Body matches string
+
+↳ Update a sender
+  PUT https://api.sendinblue.com/v3/senders/13 [204 No Content, 861B, 787ms]
+  ✓  Status code is 204
+
+↳ Delete a sender
+  DELETE https://api.sendinblue.com/v3/senders/13 [204 No Content, 854B, 479ms]
+  ✓  Status code is 204
+
+↳ Get all the dedicated IPs for a sender
+  GET https://api.sendinblue.com/v3/senders/1/ips [200 OK, 986B, 592ms]
+  ✓  Body matches string
+
+┌─────────────────────────┬────────────────────┬────────────────────┐
+│                         │           executed │             failed │
+├─────────────────────────┼────────────────────┼────────────────────┤
+│              iterations │                  1 │                  0 │
+├─────────────────────────┼────────────────────┼────────────────────┤
+│                requests │                158 │                  0 │
+├─────────────────────────┼────────────────────┼────────────────────┤
+│            test-scripts │                187 │                  0 │
+├─────────────────────────┼────────────────────┼────────────────────┤
+│      prerequest-scripts │                158 │                  0 │
+├─────────────────────────┼────────────────────┼────────────────────┤
+│              assertions │                 48 │                  4 │
+├─────────────────────────┴────────────────────┴────────────────────┤
+│ total run duration: 1m 18.5s                                      │
+├───────────────────────────────────────────────────────────────────┤
+│ total data received: 28.62kB (approx)                             │
+├───────────────────────────────────────────────────────────────────┤
+│ average response time: 473ms [min: 284ms, max: 2.3s, s.d.: 295ms] │
+└───────────────────────────────────────────────────────────────────┘
+
+  #  failure        detail                                                 
+                                                                           
+ 1.  AssertionErr…  Folders array is present and contains the expected     
+                    number of elements                                     
+                    expected [ { id: 12, …(4) }, …(5) ] to have a length   
+                    of 5 but got 6                                         
+                    at assertion:0 in test-script                          
+                    inside "Contact management / Folders / Get all         
+                    folders"                                               
+                                                                           
+ 2.  AssertionErr…  verify that body contains status                       
+                    expected 'completed' to deeply equal 'queued'          
+                    at assertion:0 in test-script                          
+                    inside "Account / Process / Return all the processes   
+                    for your account"                                      
+                                                                           
+ 3.  AssertionErr…  verify that body contains name                         
+                    expected 'SEARCH_EXPORT_USERS' to deeply equal         
+                    'TRANS-GLOBAL-CALC'                                    
+                    at assertion:1 in test-script                          
+                    inside "Account / Process / Return all the processes   
+                    for your account"                                      
+                                                                           
+ 4.  AssertionErr…  Verify the value of status                             
+                    expected 'completed' to deeply equal 'queued'          
+                    at assertion:0 in test-script                          
+                    inside "Account / Process / Return the informations    
+                    for a process"

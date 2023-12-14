@@ -4,6 +4,7 @@ public class Task10 {
     public static void main(String[] args) {
         verifyVisitors();
     }
+
     public static void verifyVisitors() {
         Scanner scanner = new Scanner(System.in);
 

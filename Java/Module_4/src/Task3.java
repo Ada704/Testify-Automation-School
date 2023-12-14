@@ -3,8 +3,8 @@ public class Task3 {
         int age = 99;
         String information = "I am  ";
 
-        System.out.println(information + age + "years old");
-        System.out.println(information.concat(age + "years old"));
+        System.out.println(information + age + "years old.");
+        System.out.println(information.concat(age + "years old."));
 
     }
 }

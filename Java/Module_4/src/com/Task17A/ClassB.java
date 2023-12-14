@@ -6,7 +6,6 @@ public class ClassB extends ClassA{
 
             System.out.println("Entering username: " + username);
         }
-
         @Override
         public void enterPassword(String password) {
 

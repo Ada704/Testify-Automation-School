@@ -1,5 +1,5 @@
 
-def sentence():
+def welcome():
     print("Hello World")
 
 
@@ -7,5 +7,5 @@ def name():
     pass
 
 
-sentence()
+welcome()
 name()
